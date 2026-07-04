@@ -1,19 +1,8 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <title>JRD SEC</title>
-</head>
-<body>
 <script type="module">
-    import { IS_state } from "./IS/state.js";
-    import { SYT_core } from "./SYT/core.js";
+    import { SCAN } from "./SCAN.js";
 
-    IS_state();
-    SYT_core();
+    SCAN.runIS();
+    SCAN.runSYT();
+
+    console.log(SCAN.status());
 </script>
-
-<a href="index.html">zurück zu PRIM</a>
-</body>
-</html>
-
