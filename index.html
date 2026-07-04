@@ -1,10 +1,10 @@
 <script type="module">
-    import { SCAN } from "./SCAN.js";
+    import { TrinityCore } from "./core.js";
 
-    SCAN.runAX();
-    SCAN.runIS();
-    SCAN.runXA();
-    SCAN.runSYT();
+    TrinityCore.modi.fn.SCAN.AX();
+    TrinityCore.modi.fn.SCAN.IS();
+    TrinityCore.modi.fn.SCAN.XA();
+    TrinityCore.modi.fn.SCAN.SYT();
 
-    console.log(SCAN.status());
+    console.log(TrinityCore.modi.fn.SCAN.status());
 </script>
