@@ -1,23 +1,10 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <title>JRD PRIM</title>
-</head>
-<body>
 <script type="module">
-    import { AX_forward } from "./AX/forward.js";
-    import { IS_state } from "./IS/state.js";
-    import { XA_return } from "./XA/return.js";
-    import { SYT_core } from "./SYT/core.js";
+    import { SCAN } from "./SCAN.js";
 
-    AX_forward();
-    IS_state();
-    XA_return();
-    SYT_core();
+    SCAN.runAX();
+    SCAN.runIS();
+    SCAN.runXA();
+    SCAN.runSYT();
+
+    console.log(SCAN.status());
 </script>
-
-<a href="ch.html">SEC öffnen</a>
-</body>
-</html>
-
