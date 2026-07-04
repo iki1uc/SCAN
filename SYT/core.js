@@ -4,3 +4,4 @@ export function SYT_core() {
     return "SYT_CORE_OK";
 }
 
+Pipeline.run(1);
